@@ -1,2 +1,1 @@
-# learnPython
-a repo about my self learning python ( i just wan to dump my files here)
+Just a repo contain myself learn python
