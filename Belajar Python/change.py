@@ -8,9 +8,11 @@ class SquareToCircle(Scene):
         circle = Circle()
         circle.set_fill(PINK, opacity=0.5)
         circle.rotate(PI / 4)
+        
+        square = Square()
+        square.set_fill(PINK, opacity=0.5)
 
         self.play(Create(circle))
-        self.play(Transform(circle, triangle))
-        self.play(FadeOut(circle))
-        
+        self.play(ReplacementTransform(circle, triangle))
+        self.play(ReplacementTransform(triangle, square))
         self.wait(0.5)
